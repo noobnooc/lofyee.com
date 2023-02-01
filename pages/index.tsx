@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Lofyee - A Lo-Fi music player</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="apple-itunes-app" content="app-id=1663471190"></meta>
         <meta name="description" content="Lofyee, A Lo-Fi Music Player" />
         <meta
           name="keywords"
@@ -61,7 +62,7 @@ function Main() {
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-gray-100/10 hover:ring-gray-900/20 dark:hover:ring-gray-100/20">
-                Now available on AppStore{" "}
+                Available on iOS AppStore now{" "}
                 <a
                   href="https://apps.apple.com/us/app/lofyee-a-lo-fi-player/id1663471190"
                   className="font-semibold text-lofyee"
