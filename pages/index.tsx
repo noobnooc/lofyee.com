@@ -40,7 +40,7 @@ function Main() {
       <div className="mx-auto max-w-2xl py-2 lg:py-5">
         <div className="flex items-stretch justify-between">
           <div className="flex items-center mx-5">
-            <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
+            <img className="h-10 w-10 rounded-lg" src={icon.src} alt="App Icon" />
             <span className="text-lofyee text-xl font-bold mx-2">Lofyee</span>
           </div>
           <a
@@ -48,9 +48,9 @@ function Main() {
             className="flex items-center mx-5 px-2 border border-gray-500/20 rounded-xl dark:border-gray-100/20"
           >
             <span className="opacity-50">by</span>
-            <Image
+            <img
               className="h-6 w-6 rounded mx-2"
-              src={avatar}
+              src={avatar.src}
               alt="Nooc Avatar"
             />
             Nooc
