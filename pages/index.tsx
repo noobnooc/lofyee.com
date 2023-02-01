@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { EnvelopeIcon, HeartIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import Head from "next/head";
-import Image from "next/image";
 import { Apple } from "@icons-pack/react-simple-icons";
 
 import icon from "../public/icon.png";
@@ -40,7 +39,7 @@ function Main() {
       <div className="mx-auto max-w-2xl py-2 lg:py-5">
         <div className="flex items-stretch justify-between">
           <div className="flex items-center mx-5">
-            <img className="h-10 w-10 rounded-lg" src={icon.src} alt="App Icon" />
+            <img className="h-10 w-10 rounded-lg" src='/icon.png' alt="App Icon" />
             <span className="text-lofyee text-xl font-bold mx-2">Lofyee</span>
           </div>
           <a
@@ -50,7 +49,7 @@ function Main() {
             <span className="opacity-50">by</span>
             <img
               className="h-6 w-6 rounded mx-2"
-              src={avatar.src}
+              src='/avatar.png'
               alt="Nooc Avatar"
             />
             Nooc
