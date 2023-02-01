@@ -36,7 +36,7 @@ function Main() {
         <nav className="flex items-center" aria-label="Global">
           <div className="flex items-stretch justify-between lg:flex-1">
             <div className="flex items-center -m-1.5 p-1.5">
-              <Image className="h-10 w-10" src={icon} alt="App Icon" />
+              <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
               <span className="text-rose-500 text-xl font-bold mx-2">
                 Lofyee
               </span>
