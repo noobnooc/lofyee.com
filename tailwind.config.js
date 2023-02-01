@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        lofyee: '#ff5555',
+      },
       animation: {
         fluid: "5s linear 0s infinite alternate fluid",
       },

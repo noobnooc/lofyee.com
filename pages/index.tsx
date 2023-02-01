@@ -12,16 +12,16 @@ import BackgroundGradient from "../components/background-gradient";
 
 const Home: NextPage = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden items-center justify-center py-2 bg-gray-100 text-black dark:bg-neutral-900 dark:text-gray-100">
+    <div className="relative isolate min-h-screen overflow-hidden items-center justify-center py-2 bg-gray-100 text-black dark:bg-neutral-800 dark:text-gray-100">
       <Head>
         <title>Lofyee - A Lo-Fi music player</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <BackgroundGradient className="top-0 left-0 h-96 w-48 bg-pink-500/30 duration-500 dark:bg-blue-500/40" />
-      <BackgroundGradient className="left-60 top-96 h-64 w-72 rounded-lg bg-yellow-500/30  duration-700 dark:bg-indigo-500/40" />
-      <BackgroundGradient className="right-96 bottom-60 h-60 w-60 rounded-lg bg-red-500/30 dark:bg-violet-500/30" />
-      <BackgroundGradient className="right-0 bottom-0 h-48 w-96 rounded-full bg-orange-500/30 dark:bg-cyan-500/30" />
+      <BackgroundGradient className="top-0 left-0 h-96 w-48 bg-lofyee/30 duration-500 dark:bg-lofyee/40" />
+      <BackgroundGradient className="left-60 top-96 h-64 w-72 rounded-lg bg-pink-500/30  duration-700 dark:bg-pink-500/40" />
+      <BackgroundGradient className="right-96 bottom-60 h-60 w-60 rounded-lg bg-orange-500/30 dark:bg-orange-500/30" />
+      <BackgroundGradient className="right-0 bottom-0 h-48 w-96 rounded-full bg-yellow-500/30 dark:bg-yellow-500/50" />
 
       <Main />
       <Footer />
@@ -36,7 +36,7 @@ function Main() {
         <div className="flex items-stretch justify-between">
           <div className="flex items-center mx-5">
             <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
-            <span className="text-rose-500 text-xl font-bold mx-2">Lofyee</span>
+            <span className="text-lofyee text-xl font-bold mx-2">Lofyee</span>
           </div>
           <a
             href="https://nooc.ink"
@@ -60,7 +60,7 @@ function Main() {
                 Now available on AppStore{" "}
                 <a
                   href="https://apps.apple.com/us/app/lofyee-a-lo-fi-player/id1663471190"
-                  className="font-semibold text-rose-500"
+                  className="font-semibold text-lofyee"
                 >
                   <span className="absolute inset-0" aria-hidden="true" />
                   Download <span aria-hidden="true">&rarr;</span>
@@ -68,7 +68,7 @@ function Main() {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-rose-500">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-lofyee">
                 Lofyee - Lo-Fi Music Player
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
@@ -78,7 +78,7 @@ function Main() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="https://apps.apple.com/us/app/lofyee-a-lo-fi-player/id1663471190"
-                  className="flex items-center rounded-md bg-rose-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex items-center rounded-md bg-lofyee px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-lofyee/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   <Apple className="mx-1 -translate-y-0.5" size={20} />
                   AppStore
@@ -88,32 +88,6 @@ function Main() {
                 </a> */}
               </div>
             </div>
-          </div>
-          <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-            <svg
-              className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
-              viewBox="0 0 1155 678"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
-                fillOpacity=".3"
-                d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-              />
-              <defs>
-                <linearGradient
-                  id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
-                  x1="1155.49"
-                  x2="-78.208"
-                  y1=".177"
-                  y2="474.645"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
-                </linearGradient>
-              </defs>
-            </svg>
           </div>
         </div>
       </main>
