@@ -33,28 +33,24 @@ function Main() {
   return (
     <div className="isolate">
       <div className="mx-auto max-w-2xl py-2 lg:py-5">
-        <nav className="flex items-center" aria-label="Global">
-          <div className="flex items-stretch justify-between lg:flex-1">
-            <div className="flex items-center -m-1.5 p-1.5">
-              <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
-              <span className="text-rose-500 text-xl font-bold mx-2">
-                Lofyee
-              </span>
-            </div>
-            <a
-              href="https://nooc.ink"
-              className="flex items-center mx-5 px-2 border rounded-xl dark:border-gray-500"
-            >
-              <span className="opacity-50">by</span>
-              <Image
-                className="h-6 w-6 rounded mx-2"
-                src={avatar}
-                alt="Nooc Avatar"
-              />
-              Nooc
-            </a>
+        <div className="flex items-stretch justify-between">
+          <div className="flex items-center mx-5">
+            <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
+            <span className="text-rose-500 text-xl font-bold mx-2">Lofyee</span>
           </div>
-        </nav>
+          <a
+            href="https://nooc.ink"
+            className="flex items-center mx-5 px-2 border rounded-xl dark:border-gray-500"
+          >
+            <span className="opacity-50">by</span>
+            <Image
+              className="h-6 w-6 rounded mx-2"
+              src={avatar}
+              alt="Nooc Avatar"
+            />
+            Nooc
+          </a>
+        </div>
       </div>
       <main>
         <div className="relative px-6 lg:px-8">
@@ -127,10 +123,7 @@ function Main() {
 
 export function Footer() {
   return (
-    <footer
-      aria-label="Site Footer"
-      className="pb-16 sm:py-16"
-    >
+    <footer aria-label="Site Footer" className="pb-16 sm:py-16">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
           <svg
