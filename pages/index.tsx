@@ -45,7 +45,7 @@ function Main() {
           </div>
           <a
             href="https://nooc.ink"
-            className="flex items-center mx-5 px-2 border rounded-xl dark:border-gray-500"
+            className="flex items-center mx-5 px-2 border border-gray-500/20 rounded-xl dark:border-gray-100/20"
           >
             <span className="opacity-50">by</span>
             <Image
@@ -218,7 +218,7 @@ export function Footer() {
         <p className="my-1 uppercase opacity-60">Acknowledgement</p>
         Powered by TypeScript / React / TailwindCSS and more
         <br />
-        Hosted on Cloudflare Pages
+        Hosted on Vercel
       </div>
     </footer>
   );
