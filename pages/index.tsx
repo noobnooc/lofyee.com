@@ -57,9 +57,17 @@ function Main() {
           </a>
         </div>
       </div>
-      <main>
+      <main className="relative">
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            {/* Screenshots for desktop */}
+            <img className="absolute -z-10 rotate-12 hidden w-56 top-10 -left-60 opacity-50 sm:block" src="/Player.png" alt="Player Screenshot" />
+            <img className="absolute -z-10 -rotate-45 hidden w-56 -bottom-40 -right-60 opacity-50 sm:block" src="/Collections.png" alt="Collections Screenshot" />
+
+            {/* Screenshots got mobile */}
+            <img className="absolute -z-10 rotate-12 w-48 top-10 -left-20 opacity-10 sm:hidden" src="/Player.png" alt="Player Screenshot" />
+            <img className="absolute -z-10 -rotate-12 w-48 -bottom-60 -right-20 opacity-10 sm:hidden" src="/Collections.png" alt="Collections Screenshot" />
+            
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-gray-100/10 hover:ring-gray-900/20 dark:hover:ring-gray-100/20">
                 Available on iOS AppStore now{" "}
