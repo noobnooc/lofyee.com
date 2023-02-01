@@ -16,6 +16,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Lofyee - A Lo-Fi music player</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Lofyee, A Lo-Fi Music Player" />
+        <meta
+          name="keywords"
+          content="Nooc, noobnooc, noocink, nookinc, Noob Nooc, Lo-Fi, Lo-Fi Music, Lo-Fi Player, Music Player"
+        />
       </Head>
 
       <BackgroundGradient className="top-0 left-0 h-96 w-48 bg-lofyee/30 duration-500 dark:bg-lofyee/40" />
