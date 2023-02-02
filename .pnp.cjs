@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.3"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
+            ["@vercel/analytics", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.1.8"],\
             ["autoprefixer", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:10.4.13"],\
             ["classnames", "npm:2.3.2"],\
             ["next", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:13.1.6"],\
@@ -352,6 +353,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
           "packageDependencies": [\
             ["@types/scheduler", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@vercel/analytics", [\
+        ["npm:0.1.8", {\
+          "packageLocation": "./.yarn/cache/@vercel-analytics-npm-0.1.8-76bdbee610-e837f66494.zip/node_modules/@vercel/analytics/",\
+          "packageDependencies": [\
+            ["@vercel/analytics", "npm:0.1.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.1.8", {\
+          "packageLocation": "./.yarn/__virtual__/@vercel-analytics-virtual-4d3652bb27/0/cache/@vercel-analytics-npm-0.1.8-76bdbee610-e837f66494.zip/node_modules/@vercel/analytics/",\
+          "packageDependencies": [\
+            ["@vercel/analytics", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.1.8"],\
+            ["@types/react", "npm:18.0.21"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2210,6 +2233,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.3"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
+            ["@vercel/analytics", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.1.8"],\
             ["autoprefixer", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:10.4.13"],\
             ["classnames", "npm:2.3.2"],\
             ["next", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:13.1.6"],\
