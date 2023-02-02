@@ -2,10 +2,13 @@ import type { NextPage } from "next";
 import { EnvelopeIcon, HeartIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import Head from "next/head";
+import Image from 'next/image';
 import { Apple } from "@icons-pack/react-simple-icons";
 
 import icon from "../public/icon.png";
 import avatar from "../public/avatar.png";
+import collectionsScreenshot from '../public/collections.png';
+import playerScreenshot from '../public/player.png';
 
 import BackgroundGradient from "../components/background-gradient";
 
@@ -40,7 +43,7 @@ function Main() {
       <div className="mx-auto max-w-2xl py-2 lg:py-5">
         <div className="flex items-stretch justify-between">
           <div className="flex items-center mx-5">
-            <img className="h-10 w-10 rounded-lg" src='/icon.png' alt="App Icon" />
+            <Image className="h-10 w-10 rounded-lg" src={icon} alt="App Icon" />
             <span className="text-lofyee text-xl font-bold mx-2">Lofyee</span>
           </div>
           <a
@@ -48,9 +51,9 @@ function Main() {
             className="flex items-center mx-5 px-2 border border-gray-500/20 rounded-xl dark:border-gray-100/20"
           >
             <span className="opacity-50">by</span>
-            <img
+            <Image
               className="h-6 w-6 rounded mx-2"
-              src='/avatar.png'
+              src={avatar}
               alt="Nooc Avatar"
             />
             Nooc
@@ -61,12 +64,12 @@ function Main() {
         <div className="relative px-6 lg:px-8">
           <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             {/* Screenshots for desktop */}
-            <img className="absolute -z-10 rotate-12 hidden w-56 top-10 -left-60 opacity-50 sm:block" src="/Player.png" alt="Player Screenshot" />
-            <img className="absolute -z-10 -rotate-45 hidden w-56 -bottom-40 -right-60 opacity-50 sm:block" src="/Collections.png" alt="Collections Screenshot" />
+            <Image className="absolute -z-10 rotate-12 hidden w-56 top-10 -left-60 opacity-50 sm:block" src={playerScreenshot} alt="Player Screenshot" />
+            <Image className="absolute -z-10 -rotate-45 hidden w-56 -bottom-40 -right-60 opacity-50 sm:block" src={collectionsScreenshot} alt="Collections Screenshot" />
 
             {/* Screenshots got mobile */}
-            <img className="absolute -z-10 rotate-12 w-48 top-10 -left-20 opacity-10 sm:hidden" src="/Player.png" alt="Player Screenshot" />
-            <img className="absolute -z-10 -rotate-12 w-48 -bottom-60 -right-20 opacity-10 sm:hidden" src="/Collections.png" alt="Collections Screenshot" />
+            <Image className="absolute -z-10 rotate-12 w-48 top-10 -left-20 opacity-10 sm:hidden" src={playerScreenshot} alt="Player Screenshot" />
+            <Image className="absolute -z-10 -rotate-12 w-48 -bottom-60 -right-20 opacity-10 sm:hidden" src={collectionsScreenshot} alt="Collections Screenshot" />
             
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-gray-100/10 hover:ring-gray-900/20 dark:hover:ring-gray-100/20">
